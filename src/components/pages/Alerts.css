@@ -1,0 +1,7 @@
+.alerts-container {
+  display: flex;
+  padding-bottom: 100px;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(90deg, rgb(64, 86, 140) 0%, rgb(37, 44, 144) 31%, rgb(32, 50, 118) 65%, rgb(13, 59, 101) 100%);
+}

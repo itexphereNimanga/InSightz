@@ -1,0 +1,28 @@
+/* connectp.css */
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.container-box {
+  border: 2px solid black;
+  padding: 50px;
+  border-radius: 8px;
+}
+
+.centered-container {
+  text-align: center;
+}
+
+.connect-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 20px; /* Add margin-top to move the button down */
+}

@@ -1,0 +1,41 @@
+/* channels.css */
+.connect-page-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.channel-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.channel {
+  width: 220px;
+  margin: 10px;
+  border: 2px solid black; /* Add border styling */
+  border-radius: 8px; /* Optional: Add border-radius for rounded corners */
+  padding: 20px; /* Optional: Add padding for spacing between border and content */
+  text-align: center; /* Optional: Center text within the container */
+  cursor: pointer; /* Add cursor pointer for the clickable effect */
+  transition: border-color 0.3s; /* Add transition for a smooth effect */
+}
+
+.channel:hover {
+  border-color: blue; /* Change border color on hover */
+}
+
+.channel img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.channel p {
+  margin-top: 10px;
+}
+
+.selected {
+  border-color: green; /* Change border color for the selected channel */
+}

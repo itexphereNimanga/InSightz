@@ -1,0 +1,79 @@
+/* Home.css */
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  height: 90vh;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(90deg, rgb(64, 86, 140) 0%, rgb(37, 44, 144) 31%, rgb(32, 50, 118) 65%, rgb(13, 59, 101) 100%);
+  
+}
+
+.home img {
+  width: 40%;
+  position: absolute;
+  top:  65px;
+   /* Adjust the value to move the image down */
+  left: 58%;
+}
+
+
+.home h1 {
+  font-size: 3rem;
+  margin-bottom: 30px; /* Adjust the margin to control space between h1 and paragraph */
+  color: #ffffff;
+}
+
+.home p {
+  font-size: 1rem; /* Adjust the font size */
+  margin: 0px; /* Adjust the margin to control space between paragraphs */
+  color: #e5dbdb;
+  line-height: 1.5;
+}
+
+.butn--outline {
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+ margin-top: 30px;
+ 
+}
+
+.butn--outline:hover {
+  background-color: #3498db;
+  color: #ffffff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .home {
+    height: 100vh;
+  }
+
+  .home h1 {
+    font-size: 2.5rem;
+  }
+
+  .home p {
+    font-size: 1rem;
+  }
+
+  .butn--outline {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+  .home img {
+    max-width: 80%; /* Adjusted for responsiveness */
+    left: 55%; /* Adjusted for responsiveness */
+    bottom: 15px;
+  }
+}

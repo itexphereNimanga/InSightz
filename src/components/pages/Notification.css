@@ -1,0 +1,26 @@
+.notification {
+  width: 300px;
+  padding: 15px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+}
+
+.notification.success {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.notification.warning {
+  background-color: #ff9800;
+  color: #fff;
+}
+
+.notification .icon {
+  font-size: 20px;
+  margin-right: 10px;
+}
