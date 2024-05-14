@@ -15,7 +15,7 @@ function ContentScheduler() {
   const { user } = useUser();
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/content')
+    axios.get('http://localhost:5000/api/content/' + user.userName)
       .then(response => {
         setContentList(response.data);
       })
@@ -76,6 +76,7 @@ function ContentScheduler() {
         alert('Failed to delete content. Please try again.');
       });
   };
+  
 
   return (
     <div className="scheduler-container">

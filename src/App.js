@@ -12,6 +12,7 @@ import Analytics from "./components/pages/analyticsBtn";
 import ConnectPage from "./components/pages/connectp";
 import ChannelsPage from "./components/pages/channels";
 import YoutubeAnalytics from "./components/pages/analytics/AnalyticsContainer";
+import FacebookAnalytics from "./components/pages/analytics/FacebookAnalytics";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/Schedule" element={<Schedule />} />
         <Route path="/Analytics" element={<Analytics />} />
         <Route path="/youtube" element={<YoutubeAnalytics />} />
+        <Route path="/facebook" element={<FacebookAnalytics />} />
         <Route path="/Connect" element={<ConnectPage />} />
         <Route path="/ConnectChannels" element={<ChannelsPage />} />
       </Routes>

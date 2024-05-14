@@ -11,6 +11,10 @@ const AnalyticsContainer = () => {
   const handleNavigate = () => {
     navigate("/youtube");
   };
+
+  const handleFBNavigate = () => {    
+    navigate("/facebook");
+  };
   return (
     <div style={{ flexGrow: 1, padding: 100 }}>
       <Grid container spacing={4}>
@@ -66,6 +70,7 @@ const AnalyticsContainer = () => {
                   fontSize: "1.5rem",
                   padding: "10px 0",
                 }}
+                onClick={handleFBNavigate}
               >
                 Facebook
               </Button>
