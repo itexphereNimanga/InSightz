@@ -1,56 +1,31 @@
-/* Schedule.css */
-.schedule-container {
+.scheduler-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
-  color: #fff;
-  background: linear-gradient(90deg, rgb(64, 86, 140) 0%, rgb(37, 44, 144) 31%, rgb(32, 50, 118) 65%, rgb(13, 59, 101) 100%);
+  margin-top: 20px;
 }
 
-h1 {
+.content-form {
   margin-bottom: 20px;
 }
 
-.calendar {
-  /* Style for the green calendar */
-  background-color: #53d1ff; /* Green color */
-  color: #fff; /* Text color */
-  border: 1px solid   #53d1ff; /* Border color */
-  margin-bottom: 10%;
+.content-form input, .content-form textarea, .content-form button {
+  margin: 10px;
+  padding: 8px;
 }
 
-.event {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
-  margin-bottom: 15px;
-  padding: 15px;
-  background-color: #a6a9ff;
-  border-radius: 8px;
+.content-list .content-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 10px;
+  width: 300px;
 }
 
-.event-info {
-  flex: 1;
-  color: black;
+.content-item h4 {
+  margin: 0;
+  color: #333;
 }
 
-.event-actions {
-  display: flex;
-  gap: 10px;
-}
-.delete:hover{
-  background-color: red;
-}
-button {
-  padding: 8px 16px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #0056b3;
+.content-item p {
+  margin: 5px 0;
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from "./components/pages/Home";
 import Login from "./components/pages/Log";
 import Signup from "./components/pages/Signup";
@@ -16,24 +16,20 @@ import YoutubeAnalytics from "./components/pages/analytics/AnalyticsContainer";
 function App() {
   return (
     <>
-      <Router>
-        <Navbar />
+      <Navbar />
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/Account" element={<Account />} />
-          <Route path="/Alerts" element={<Alerts />} />
-          <Route path="/Schedule" element={<Schedule />} />
-          <Route path="/Analytics" element={<Analytics />} />
-          <Route path="/youtube" element={<YoutubeAnalytics />} />
-          <Route path="/Connect" element={<ConnectPage />} />
-          {/* Add this line for the ConnectPage route */}
-          <Route path="/ConnectChannels" element={<ChannelsPage />} />
-          {/* Add this line for the ConnectChannelsPage route */}
-        </Routes>
-      </Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/Account" element={<Account />} />
+        <Route path="/Alerts" element={<Alerts />} />
+        <Route path="/Schedule" element={<Schedule />} />
+        <Route path="/Analytics" element={<Analytics />} />
+        <Route path="/youtube" element={<YoutubeAnalytics />} />
+        <Route path="/Connect" element={<ConnectPage />} />
+        <Route path="/ConnectChannels" element={<ChannelsPage />} />
+      </Routes>
     </>
   );
 }

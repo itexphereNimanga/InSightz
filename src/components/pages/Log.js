@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./Log.css";
+import { useUser } from '../../UserContext'; // Import the useUser hook
 
 const Login = () => {
   const navigate = useNavigate();
+  const { login } = useUser(); // Retrieve the login function from context
 
   const [formData, setFormData] = useState({
     username: "",
@@ -22,9 +24,7 @@ const Login = () => {
         password: formData.password,
       });
       const { token, userName, userEmail } = response.data;
-      localStorage.setItem("token", token);
-      localStorage.setItem("userName", userName);
-      localStorage.setItem("userEmail", userEmail);
+      login(token, userName, userEmail); // Use the login function from context
       navigate("/");
     } catch (error) {
       setError("Invalid username or password");
